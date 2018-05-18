@@ -1,28 +1,41 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+
+html {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  background: #000 url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg");
+  background-attachment: fixed;
+  color: #fdf253;
+}
+
+.charact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+img{
+  background-color: black;
+  margin: 5px;
+  border-radius: 5px;
+  border: 0.3rem inset #fdf253;
+  float: left;
+  max-width: 180px;
+  height: 180px;
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
 
-.App-title {
-  font-size: 1.5em;
-}
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1rem;
+  border: 0.3rem inset #fdf253;
+  text-decoration: none;
+  transition: background-size 10s cubic-bezier(0, 0.76, 0, 1.15)
