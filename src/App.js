@@ -19,16 +19,10 @@ class App extends Component {
           })
       })
     }
-    
-  cliked(){
-    console.log('the button was cliked')
-  }
 
   render() {
     return (
-      <div>
-      <button onClick={this.cliked}> Masculin </button>
-      <button> Feminin </button>
+      <div className="charact">
      {
       this.state.data ?
       this.state.data.map((item)=>
@@ -40,7 +34,7 @@ class App extends Component {
         </div>
 
         )
-      : <h3>Choubaka sois patient...</h3>
+      : <h3>Choubaka sois patient</h3>
 
      }      
       
